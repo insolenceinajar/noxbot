@@ -7,7 +7,6 @@ bot.on('message', message => {
     if (message.content === '!scream') {
     	var schrei = Math.floor(Math.random()*3)+1;
         message.reply(schrei);
-        message.sendMessage('Pyu.');
   	}
 });
 
