@@ -20,7 +20,7 @@ bot.on('message', message => {
 	
 	var noise = ["AAAAAAAAAH!","AAAHAHAAAAAHAAA!!","AAAHAAAAAAAAHAHAHAHAAAAAAAAAAA!!"];
 	var diff = Math.floor(Math.random()*3);
-	message.reply(noise[0]);
+	message.reply(noise[diff]);
     }
 });
 
