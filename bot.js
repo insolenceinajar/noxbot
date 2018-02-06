@@ -15,6 +15,13 @@ bot.on('message', message => {
         }
         message.reply(wurf);
     }
+    if ( (message.content == '!scream')||(message.content == '!Scream')||
+       	 (message.content == '!schrei')||(message.content == '!Schrei') ) {
+	
+	var noise = new Array('AAAAAAAAAH!','AAAHAHAAAAAHAAA!!','AAAHAAAAAAAAHAHAHAHAAAAAAAAAAA!!');
+	var diff = Math.floor(Math.random()*3);
+	message.reply(noise[diff]);
+    }
 });
 
 // Token
