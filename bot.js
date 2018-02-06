@@ -1,16 +1,14 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const bot = new Discord.Client();
 
-client.on('ready', () => {
-    console.log('Bereit!');
-});
+bot.on('ready', function(){console.log('Bereit!');} );
 
-client.on('message', message => {
+bot.on('message', function(user,userID,channelID,message){
     if (message.content === '!scream') {
     	var schrei = Math.floor(Math.random()*3)+1;
         message.reply(schrei);
-  	}
+  	}    
 });
 
 // Token
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
