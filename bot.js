@@ -4,15 +4,15 @@ var bot = new Discord.Client();
 bot.on('ready', () => {console.log('Bereit!');} );
 
 bot.on('message', message => {
-    if (message.content === '!scream') {
+    if (message.content === '!würfel'||'!Würfel'||'!wuerfel'||'!Wuerfel') {
         
-        var schrei = new Array(3);
-	var inDv = schrei.length;
+        var wurf = new Array(3);
+	var inDv = wurf.length;
         for(var i=0; i<inDv; i++){
-	        var radum = Math.floor(Math.random()*10)+0;
-    	    schrei[i]=radum;
+	        var radum = Math.floor(Math.random()*6)+1;
+    	    wurf[i]=radum;
         }
-        message.reply(schrei);
+        message.reply(wurf);
     }
 });
 
