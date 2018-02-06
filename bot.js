@@ -12,7 +12,7 @@ bot.on('message', message => {
 	        var radum = Math.floor(Math.random()*10)+0;
     	    FCK[i]=radum;
         }
-        message.reply(FCK);
+        message.reply(FCK[3]);
   	}
 });
 
