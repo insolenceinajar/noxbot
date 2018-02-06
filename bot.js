@@ -5,15 +5,14 @@ bot.on('ready', () => {console.log('Bereit!');} );
 
 bot.on('message', message => {
     if (message.content === '!scream') {
-    	//var schrei = new Array(
         
-        var FCK = new Array(20);
-        for(var i=0; i<=20; i++){
+        var schrei = new Array(3);
+        /*for(var i=0; i<=20; i++){
 	        var radum = Math.floor(Math.random()*10)+0;
-    	    FCK[i]=radum;
-        }
-        message.reply(FCK);
-  	}
+    	    schrei[i]=radum;
+        }*/
+        message.reply(schrei.length);
+    }
 });
 
 // Token
