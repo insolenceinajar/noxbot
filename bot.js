@@ -4,7 +4,7 @@ var bot = new Discord.Client();
 bot.on('ready', () => {console.log('Bereit!');} );
 
 bot.on('message', message => {
-    if (message.content === ('!würfel'||'!Würfel')) {
+    if ( (message.content == '!würfel')||(message.content == '!Würfel') ) {
         
         var wurf = new Array(3);
 	var inDv = wurf.length;
