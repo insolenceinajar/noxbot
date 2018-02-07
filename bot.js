@@ -13,7 +13,7 @@ bot.on('message', message => {
 	        var radum = Math.floor(Math.random()*6)+1;
     	    wurf[i]=radum;
         }
-        message.sendMessage(wurf);
+        message.reply(wurf);
     }
     if ( (message.content == '!scream')||(message.content == '!Scream')||
        	 (message.content == '!schrei')||(message.content == '!Schrei') ) {
